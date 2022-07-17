@@ -9,11 +9,21 @@ import UIKit
 
 class ViewController: UIViewController {
 
+
+    @IBOutlet weak var increaseButton: UIButton!
+    @IBOutlet weak var counterValueLabel: UILabel!
+    
+    var counterValue = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        counterValueLabel.text = "\(counterValue)"
     }
 
-
+    @IBAction func IncreaseCounter() {
+        counterValue += 1;
+        counterValueLabel.text = "\(counterValue)"
+    }
+    
 }
 

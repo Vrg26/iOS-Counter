@@ -8,21 +8,20 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-
-    @IBOutlet weak var increaseButton: UIButton!
+    
     @IBOutlet weak var counterValueLabel: UILabel!
     
+    let counterTextTemplate = "Значение счетчика: %d"
     var counterValue = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        counterValueLabel.text = "\(counterValue)"
+        counterValueLabel.text = String(format: counterTextTemplate, counterValue)
     }
 
-    @IBAction func IncreaseCounter() {
+    @IBAction func onIncreaseCounter() {
         counterValue += 1;
-        counterValueLabel.text = "\(counterValue)"
+        counterValueLabel.text = String(format: counterTextTemplate, counterValue)
     }
     
 }

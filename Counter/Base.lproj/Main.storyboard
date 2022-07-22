@@ -16,23 +16,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Значение счетчика" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PIq-Wk-LyJ">
-                                <rect key="frame" x="102.5" y="387" width="210" height="29"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MJU-AW-38a">
                                 <rect key="frame" x="102" y="788" width="210" height="44"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Click"/>
                                 <connections>
-                                    <action selector="IncreaseCounter" destination="BYZ-38-t0r" eventType="touchUpInside" id="M9L-iY-b7F"/>
+                                    <action selector="onIncreaseCounter" destination="BYZ-38-t0r" eventType="touchUpInside" id="88v-ul-ToM"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="42" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3mB-aU-CcH">
-                                <rect key="frame" x="183" y="424" width="48" height="48"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Значение счетчика: 42" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PIq-Wk-LyJ">
+                                <rect key="frame" x="20" y="387" width="374" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -42,19 +36,16 @@
                         <constraints>
                             <constraint firstItem="PIq-Wk-LyJ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1Pf-Oj-kik"/>
                             <constraint firstItem="MJU-AW-38a" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.507246" id="6yO-hx-YKE"/>
-                            <constraint firstItem="3mB-aU-CcH" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="8yK-Pd-cDE"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MJU-AW-38a" secondAttribute="bottom" constant="30" id="FRI-15-gjD"/>
                             <constraint firstItem="PIq-Wk-LyJ" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0323661" id="KZf-Tc-gVi"/>
                             <constraint firstItem="PIq-Wk-LyJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="343" id="MBa-IB-NBY"/>
                             <constraint firstItem="MJU-AW-38a" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0491071" id="VBb-rw-geP"/>
-                            <constraint firstItem="3mB-aU-CcH" firstAttribute="top" secondItem="PIq-Wk-LyJ" secondAttribute="bottom" constant="8" symbolic="YES" id="eNe-jk-vc9"/>
-                            <constraint firstItem="3mB-aU-CcH" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0535714" id="ejV-CL-1DU"/>
+                            <constraint firstItem="PIq-Wk-LyJ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.903382" id="ZVb-Ux-80Z"/>
                             <constraint firstItem="MJU-AW-38a" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="uOi-Tw-98T"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="counterValueLabel" destination="3mB-aU-CcH" id="UBw-1K-HTo"/>
-                        <outlet property="increaseButton" destination="MJU-AW-38a" id="cOM-aQ-AjP"/>
+                        <outlet property="counterValueLabel" destination="PIq-Wk-LyJ" id="5oV-lj-mcU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
